@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+}
+
+header {
+  text-align: center;
+  background:#00695C; 
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header p {
+  margin: 0;
+}
+
+.form-box,
+.contact-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background: #00695C;
+  margin-right: 8px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.contact-card {
+  border: 1px solid #e2e8f0;
+  padding: 18px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: #00695C;
+}
+
+.edit {
+  background: #0891b2;
+}
+
+.delete {
+  background: #dc2626;
+}
+
+.empty {
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+}
